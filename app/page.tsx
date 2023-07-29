@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import Logo from '../nextjs-github-pages/public/Images/cc2-header.png';
+import Logo from '../public/Images/cc2-header.png';
 import style from './Components/page.module.css';
 
 export default function Home() {
