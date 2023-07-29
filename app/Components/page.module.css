@@ -1,0 +1,98 @@
+.main {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+.nav {
+	display: flex;
+	flex-direction: column;
+	justify-self: flex-end;
+	align-self: flex-start;
+	position: sticky;
+	top: 20px;
+	margin: 1rem 1rem;
+}
+
+.nav * {
+	color: rgb(64, 64, 221);
+	text-decoration: none;
+}
+
+.nav *:hover {
+	text-decoration: underline;
+}
+.description {
+	display: flex;
+	flex-direction: column;
+	margin: 1vw 5rem;
+	row-gap: 1rem;
+	max-width: 90vw;
+}
+
+.description article h2 {
+	line-height: 5rem;
+}
+
+.description article p {
+	line-height: 2rem;
+	word-wrap: break-word;
+}
+
+.description a {
+	color: rgb(64, 64, 221);
+	text-decoration: none;
+}
+
+.description a:hover {
+	text-decoration: underline;
+}
+
+.description dt {
+	display: list-item;
+	margin-left: 2.5rem;
+	list-style-type: disc;
+}
+
+.description dd {
+	display: list-item;
+	margin-left: 3.5rem;
+	list-style-type: circle;
+}
+
+.description code {
+	font-family: monospace;
+	font-size: 1em;
+	padding: 0.2em 0.4em;
+	white-space: break-spaces;
+	border-radius: 6px;
+	background-color: var(--color-code);
+}
+
+.description pre {
+	padding: 1rem;
+	overflow: auto;
+	line-height: 1.45;
+	border-radius: 6px;
+}
+
+.description pre code {
+	padding: 0;
+	margin: 0;
+	overflow: visible;
+	word-wrap: normal;
+}
+
+.description table {
+	border: 1px solid;
+	border-collapse: collapse;
+}
+
+.description table th {
+	border: 1px solid;
+	padding: 0.3rem;
+}
+.description table td {
+	border: 1px solid;
+	padding: 0.3rem;
+}

@@ -1,95 +1,69 @@
-import Image from 'next/image'
-import styles from './page.module.css'
+import Image from 'next/image';
+import Link from 'next/link';
+import Logo from '../nextjs-github-pages/public/Images/cc2-header.png';
+import style from './Components/page.module.css';
 
 export default function Home() {
-  return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
+	return (
+		<main className={style.main}>
+			<div className={style.description}>
+				<Image src={Logo} alt="CC2 Logo" style={{ width: '90vw' }} priority />
+				<h1>Welcome to the Unofficial Carrier Command 2 Mod Development Wiki</h1>
+				<h2>
+					This wiki is intended to serve as a reference for anyone working on{' '}
+					<a href="https://steamcommunity.com/app/1489630/workshop/">mods</a> for
+					<a href="https://store.steampowered.com/app/1489630/Carrier_Command_2/">
+						{' '}
+						Carrier Command 2{' '}
+					</a>
+					by MicroProse/
+					<a href="https://store.steampowered.com/developer/Geometa?snr=1_5_9__2000">
+						{' '}
+						Geometa{' '}
+					</a>
+					game
+				</h2>
 
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore the Next.js 13 playground.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
-  )
+				<dl>
+					<dt>
+						<Link href="/GeneralModAdvice">General Mod Advice</Link>
+					</dt>
+					<dt>
+						<Link href="/SaveEditing">Save Editing</Link>
+					</dt>
+					<dt>
+						<Link href="/">3D Modelling</Link>
+					</dt>
+					<dt>
+						<Link href="/">Control screens and Lua mods</Link>
+					</dt>
+					<dt>
+						<Link href="/LuaScriptDebugging">Lua Script Debugging</Link>
+					</dt>
+					<dt>Mod Reference</dt>
+					<dd>
+						<Link href="/ModReferance/LuaFunctions">Lua Functions</Link> - getting map
+						data, ui output etc
+					</dd>
+					<dd>
+						{' '}
+						<Link href="/ModReferance/Units">Units</Link> - ships, aircraft, vehicles
+						etc
+					</dd>
+					<dd>
+						<Link href="/ModReferance/Attachments">Attachments</Link> - cameras,
+						turrets, guns, utility pods
+					</dd>
+					<dd>
+						<Link href="/ModReferance/SpecialItems">Special Items</Link> -
+						Units/Attachments that have special (non-modable) behaviour
+					</dd>
+					<dd>
+						{' '}
+						<Link href="/ModReferance/LuaGlobalVars">Lua Global vars</Link>
+					</dd>
+				</dl>
+			</div>
+		</main>
+	);
 }
