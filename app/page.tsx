@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import Logo from '../nextjs-github-pages/public/Images/cc2-header.png';
-import style from './nextjs-github-pages/Components/page.module.css';
+import Logo from '../public/Images/cc2-header.png';
+import style from './Components/page.module.css';
 
 export default function Home() {
 	return (
@@ -26,53 +26,44 @@ export default function Home() {
 
 				<dl>
 					<dt>
-						<Link href="/nextjs-github-pages/GeneralModAdvice">
-							General Mod Advice
-						</Link>
+						<Link href="/GeneralModAdvice">General Mod Advice</Link>
 					</dt>
 					<dt>
-						<Link href="/nextjs-github-pages/SaveEditing">Save Editing</Link>
+						<Link href="/SaveEditing">Save Editing</Link>
 					</dt>
 					<dt>
-						<Link href="/nextjs-github-pages/">3D Modelling</Link>
+						<Link href="/">3D Modelling</Link>
 					</dt>
 					<dt>
-						<Link href="/nextjs-github-pages/">Control screens and Lua mods</Link>
+						<Link href="/">Control screens and Lua mods</Link>
 					</dt>
 					<dt>
-						<Link href="/nextjs-github-pages/LuaScriptDebugging">
-							Lua Script Debugging
-						</Link>
+						<Link href="/">Missile Physics</Link>
+					</dt>
+					<dt>
+						<Link href="/LuaScriptDebugging">Lua Script Debugging</Link>
 					</dt>
 					<dt>Mod Reference</dt>
 					<dd>
-						<Link href="/nextjs-github-pages/ModReferance/LuaFunctions">
-							Lua Functions
-						</Link>{' '}
-						- getting map data, ui output etc
+						<Link href="/ModReferance/LuaFunctions">Lua Functions</Link> - getting map
+						data, ui output etc
 					</dd>
 					<dd>
 						{' '}
-						<Link href="/nextjs-github-pages/ModReferance/Units">Units</Link> - ships,
-						aircraft, vehicles etc
+						<Link href="/ModReferance/Units">Units</Link> - ships, aircraft, vehicles
+						etc
 					</dd>
 					<dd>
-						<Link href="/nextjs-github-pages/ModReferance/Attachments">
-							Attachments
-						</Link>{' '}
-						- cameras, turrets, guns, utility pods
+						<Link href="/ModReferance/Attachments">Attachments</Link> - cameras,
+						turrets, guns, utility pods
 					</dd>
 					<dd>
-						<Link href="/nextjs-github-pages/ModReferance/SpecialItems">
-							Special Items
-						</Link>{' '}
-						- Units/Attachments that have special (non-modable) behaviour
+						<Link href="/ModReferance/SpecialItems">Special Items</Link> -
+						Units/Attachments that have special (non-modable) behaviour
 					</dd>
 					<dd>
 						{' '}
-						<Link href="/nextjs-github-pages/ModReferance/LuaGlobalVars">
-							Lua Global vars
-						</Link>
+						<Link href="/ModReferance/LuaGlobalVars">Lua Global vars</Link>
 					</dd>
 				</dl>
 			</div>

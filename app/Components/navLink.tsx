@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import style from './nextjs-github-pages/nextjs-github-pages/page.module.css';
+import style from './page.module.css';
 
 export default function NavLink() {
 	return (
@@ -9,6 +9,7 @@ export default function NavLink() {
 			<Link href="/SaveEditing">Save Editing</Link>
 			<Link href="/">3D Modelling</Link>
 			<Link href="/">Control screens and Lua mods</Link>
+			<Link href="/">Missile Physics</Link>
 			<Link href="/LuaScriptDebugging">Lua Script Debugging</Link>
 			<Link href="/ModReferance/LuaFunctions">Lua Functions</Link>
 			<Link href="/ModReferance/Units">Units</Link>

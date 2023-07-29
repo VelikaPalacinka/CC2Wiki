@@ -1,5 +1,5 @@
-import NavLink from '../nextjs-github-pages/Components/navLink';
-import style from '../nextjs-github-pages/Components/page.module.css';
+import NavLink from '../Components/navLink';
+import style from '../Components/page.module.css';
 
 export default function generalModAdvice() {
 	return (
