@@ -1,4 +1,5 @@
-import style from '../../Components/page.module.css';
+import NavLink from '../../nextjs-github-pages/Components/navLink';
+import style from '../../nextjs-github-pages/Components/page.module.css';
 
 export default function attachments() {
 	return (
@@ -249,6 +250,7 @@ export default function attachments() {
 					<p>The gun used by the combat droid. Very high rate of damage.</p>
 				</article>
 			</div>
+			<NavLink />
 		</main>
 	);
 }

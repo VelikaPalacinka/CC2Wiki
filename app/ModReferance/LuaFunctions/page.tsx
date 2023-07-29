@@ -1,4 +1,5 @@
-import style from '../../Components/page.module.css';
+import NavLink from '../../nextjs-github-pages/Components/navLink';
+import style from '../../nextjs-github-pages/Components/page.module.css';
 
 export default function luaFunctions() {
 	return (
@@ -161,6 +162,7 @@ export default function luaFunctions() {
 					</article>
 				</section>
 			</div>
+			<NavLink />
 		</main>
 	);
 }

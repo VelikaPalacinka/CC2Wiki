@@ -1,4 +1,5 @@
-import style from '../Components/page.module.css';
+import NavLink from '../nextjs-github-pages/Components/navLink';
+import style from '../nextjs-github-pages/Components/page.module.css';
 
 export default function saveEditing() {
 	return (
@@ -39,6 +40,7 @@ export default function saveEditing() {
 					</dl>
 				</article>
 			</div>
+			<NavLink />
 		</main>
 	);
 }

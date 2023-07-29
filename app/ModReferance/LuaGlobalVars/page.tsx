@@ -1,4 +1,5 @@
-import style from '../../Components/page.module.css';
+import NavLink from '../../nextjs-github-pages/Components/navLink';
+import style from '../../nextjs-github-pages/Components/page.module.css';
 
 export default function luaGlobalVars() {
 	return (
@@ -1028,6 +1029,7 @@ export default function luaGlobalVars() {
 					</code>
 				</pre>
 			</div>
+			<NavLink />
 		</main>
 	);
 }
