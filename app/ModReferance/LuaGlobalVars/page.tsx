@@ -4,6 +4,7 @@ import style from '../../Components/page.module.css';
 export default function luaGlobalVars() {
 	return (
 		<main className={style.main}>
+			<NavLink />
 			<div className={style.description}>
 				<h1>Mod Reference Lua Global vars</h1>
 				<p>
@@ -1029,7 +1030,6 @@ export default function luaGlobalVars() {
 					</code>
 				</pre>
 			</div>
-			<NavLink />
 		</main>
 	);
 }

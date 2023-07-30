@@ -4,6 +4,7 @@ import style from '../../Components/page.module.css';
 export default function luaFunctions() {
 	return (
 		<main className={style.main}>
+			<NavLink />
 			<div className={style.description}>
 				<h1>CC2 Lua Functions and Patterns</h1>
 				<section>
@@ -162,7 +163,6 @@ export default function luaFunctions() {
 					</article>
 				</section>
 			</div>
-			<NavLink />
 		</main>
 	);
 }

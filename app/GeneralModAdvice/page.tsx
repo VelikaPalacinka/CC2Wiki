@@ -4,6 +4,7 @@ import style from '../Components/page.module.css';
 export default function generalModAdvice() {
 	return (
 		<main className={style.main}>
+			<NavLink />
 			<div className={style.description}>
 				<article>
 					<h1>Carrier Command 2 Mods</h1>
@@ -88,7 +89,6 @@ export default function generalModAdvice() {
 					</table>
 				</article>
 			</div>
-			<NavLink />
 		</main>
 	);
 }

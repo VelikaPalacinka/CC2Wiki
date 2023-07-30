@@ -4,6 +4,7 @@ import style from '../../Components/page.module.css';
 export default function attachments() {
 	return (
 		<main className={style.main}>
+			<NavLink />
 			<div className={style.description}>
 				<h1>Game Objects - Attachments</h1>
 				<p>
@@ -250,7 +251,6 @@ export default function attachments() {
 					<p>The gun used by the combat droid. Very high rate of damage.</p>
 				</article>
 			</div>
-			<NavLink />
 		</main>
 	);
 }

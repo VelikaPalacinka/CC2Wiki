@@ -1,13 +1,18 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import Logo from '../public/Images/cc2-header.png';
-import style from './Components/page.module.css';
+import style from './page.module.css';
 
 export default function Home() {
 	return (
 		<main className={style.main}>
 			<div className={style.description}>
-				<Image src={Logo} alt="CC2 Logo" style={{ width: '90vw' }} priority />
+				<Image
+					src={Logo}
+					alt="CC2 Logo"
+					style={{ width: '55vw', height: 'auto', marginBottom: '5rem' }}
+					priority
+				/>
 				<h1>Welcome to the Unofficial Carrier Command 2 Mod Development Wiki</h1>
 				<h2>
 					This wiki is intended to serve as a reference for anyone working on{' '}

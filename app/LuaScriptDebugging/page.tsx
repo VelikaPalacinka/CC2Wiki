@@ -4,6 +4,7 @@ import style from '../Components/page.module.css';
 export default function luaScriptDebugging() {
 	return (
 		<main className={style.main}>
+			<NavLink />
 			<div className={style.description}>
 				<article>
 					<h1>Debugging CC2 Lua scripts</h1>
@@ -120,7 +121,6 @@ export default function luaScriptDebugging() {
 					</pre>
 				</article>
 			</div>
-			<NavLink />
 		</main>
 	);
 }
