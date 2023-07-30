@@ -3,7 +3,9 @@
 		'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro',
 		'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
 
-	--color-code: #6e768166;
+	--color-gray: #6e768166;
+	--color-black: #000000;
+	--color-white: #ffffff;
 	--color-background: #292929;
 	--color-link: #0089c7;
 	--color-link-hover: #a2dffb;
@@ -23,4 +25,8 @@ body {
 	background-attachment: fixed;
 	background-position: left;
 	background-size: cover;
+}
+
+main {
+	height: 100vh;
 }
