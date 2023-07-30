@@ -4,6 +4,7 @@ import style from '../../Components/page.module.css';
 export default function units() {
 	return (
 		<main className={style.main}>
+			<NavLink />
 			<div className={style.description}>
 				<h1>Game Objects - Units</h1>
 				<p>
@@ -141,7 +142,6 @@ export default function units() {
 					</p>
 				</article>
 			</div>
-			<NavLink />
 		</main>
 	);
 }

@@ -4,6 +4,7 @@ import style from '../../Components/page.module.css';
 export default function specialItems() {
 	return (
 		<main className={style.main}>
+			<NavLink />
 			<div className={style.description}>
 				<h1>Special Objects</h1>
 				<article>
@@ -105,7 +106,6 @@ export default function specialItems() {
 					</p>
 				</article>
 			</div>
-			<NavLink />
 		</main>
 	);
 }

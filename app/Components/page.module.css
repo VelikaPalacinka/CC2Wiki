@@ -1,33 +1,50 @@
 .main {
 	display: flex;
 	flex-direction: row;
-	justify-content: center;
+	justify-content: flex-start;
 	align-items: center;
+	gap: 5vw;
 }
-.nav {
+.navbar {
 	display: flex;
 	flex-direction: column;
-	justify-self: flex-end;
+	justify-self: flex-start;
 	align-self: flex-start;
 	position: sticky;
-	top: 20px;
-	margin: 1rem 1rem;
+	flex: 1 2;
+	top: 0;
+	left: 0;
+	padding: 2rem;
+	max-width: 20rem;
+	min-width: 15rem;
+	height: 100vh;
+	border-top-right-radius: 20px;
+	background-color: var(--color-background);
 }
 
 .nav * {
-	color: rgb(64, 64, 221);
+	display: block;
+	color: var(--color-link);
 	text-decoration: none;
+	line-height: 2;
 }
 
 .nav *:hover {
 	text-decoration: underline;
+	color: var(--color-link-hover);
 }
 .description {
 	display: flex;
 	flex-direction: column;
-	margin: 1vw 5rem;
+	justify-content: center;
+	flex: 2;
+	font-family: Arial, Helvetica, sans-serif;
+	height: 100%;
+	padding: 2rem;
 	row-gap: 1rem;
-	max-width: 90vw;
+	max-width: 60vw;
+	min-width: 20vw;
+	backdrop-filter: blur(8px);
 }
 
 .description article h2 {
@@ -40,11 +57,12 @@
 }
 
 .description a {
-	color: rgb(64, 64, 221);
+	color: var(--color-link);
 	text-decoration: none;
 }
 
 .description a:hover {
+	color: var(--color-link-hover);
 	text-decoration: underline;
 }
 
@@ -61,7 +79,7 @@
 }
 
 .description code {
-	font-family: monospace;
+	font-family: var(--font-mono);
 	font-size: 1em;
 	padding: 0.2em 0.4em;
 	white-space: break-spaces;
@@ -95,4 +113,16 @@
 .description table td {
 	border: 1px solid;
 	padding: 0.3rem;
+}
+
+.footer {
+	position: sticky;
+	left: 0;
+	bottom: 0;
+	background-color: var(--color-background);
+}
+.footer p {
+	display: inline;
+	padding: 0 1rem;
+	color: white;
 }

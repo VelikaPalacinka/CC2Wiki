@@ -4,6 +4,7 @@ import style from '../Components/page.module.css';
 export default function saveEditing() {
 	return (
 		<main className={style.main}>
+			<NavLink />
 			<div className={style.description}>
 				<article>
 					<h1>Save Editing</h1>
@@ -40,7 +41,6 @@ export default function saveEditing() {
 					</dl>
 				</article>
 			</div>
-			<NavLink />
 		</main>
 	);
 }
