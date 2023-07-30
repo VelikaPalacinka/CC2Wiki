@@ -17,7 +17,7 @@
 	padding: 2rem;
 	max-width: 20rem;
 	min-width: 15rem;
-	height: 100vh;
+	height: 97.5vh;
 	border-top-right-radius: 20px;
 	background-color: var(--color-background);
 }
@@ -37,18 +37,36 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	align-content: center;
 	flex: 2;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-weight: 600;
 	height: 100%;
 	padding: 2rem;
 	row-gap: 1rem;
 	max-width: 60vw;
 	min-width: 20vw;
-	backdrop-filter: blur(8px);
+	backdrop-filter: blur(30px);
+}
+
+.description article {
+	padding-bottom: 0.5rem;
+	border-bottom: 1px solid var(--color-black);
+	border-image: linear-gradient(
+			90deg,
+			var(--color-gray),
+			var(--color-black),
+			var(--color-gray)
+		)
+		1;
 }
 
 .description article h2 {
 	line-height: 5rem;
+}
+
+.description article h3 {
+	line-height: 3rem;
 }
 
 .description article p {
@@ -59,6 +77,7 @@
 .description a {
 	color: var(--color-link);
 	text-decoration: none;
+	text-shadow: 1px 1px black;
 }
 
 .description a:hover {
@@ -69,12 +88,14 @@
 .description dt {
 	display: list-item;
 	margin-left: 2.5rem;
+	padding: 0.3rem 0;
 	list-style-type: disc;
 }
 
 .description dd {
 	display: list-item;
 	margin-left: 3.5rem;
+	padding: 0.2rem 0;
 	list-style-type: circle;
 }
 
@@ -82,16 +103,23 @@
 	font-family: var(--font-mono);
 	font-size: 1em;
 	padding: 0.2em 0.4em;
+	margin: 0 0.2rem;
 	white-space: break-spaces;
 	border-radius: 6px;
-	background-color: var(--color-code);
+	color: var(--color-white);
+	background-color: var(--color-black);
 }
 
 .description pre {
-	padding: 1rem;
+	padding: 0.5rem;
+	margin: 0.5rem 0;
 	overflow: auto;
+	white-space: pre-wrap;
 	line-height: 1.45;
 	border-radius: 6px;
+	max-width: 60vw;
+	max-height: 50vh;
+	background-color: var(--color-black);
 }
 
 .description pre code {
@@ -99,6 +127,8 @@
 	margin: 0;
 	overflow: visible;
 	word-wrap: normal;
+	white-space: pre-wrap;
+	background-color: transparent;
 }
 
 .description table {
@@ -116,7 +146,12 @@
 }
 
 .footer {
+	display: flex;
+	flex-wrap: nowrap;
 	position: sticky;
+	width: 100%;
+	height: 2.6vh;
+	padding-top: 0.15rem;
 	left: 0;
 	bottom: 0;
 	background-color: var(--color-background);
@@ -124,5 +159,5 @@
 .footer p {
 	display: inline;
 	padding: 0 1rem;
-	color: white;
+	color: var(--color-white);
 }
